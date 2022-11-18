@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevins Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LoginBar -->
+
+    <div class="loginbar">
+        <div class="loginbarleft">
+            <h1 class="white">Just</h1><h1 class="orange">Dessert</h1>
+        </div>
+        <div class="loginbarjoin">
+            <button type="submit" class="joinbutton" onclick="joingroup(this)">Join</button>
+            <button class="loginbutton">Login</button>
+        </div>
+
+    </div>
+
+<!-- SearchBar -->
+    <div class="searchbar">
+        <div class="searchbarbutton">
+            <input type="text" placeholder="SEARCH">
+            <button onclick="alert('hello!')">Go</button>
+        </div>
+        <div class="searchbarimages">
+            <div class="cake">
+                <img src="cake.png" alt="cake">
+                <p>Cake</p>
+            </div>
+            <div class="cookies">
+                <img src="cookie.png" alt="cookies">
+                <p>Cookies</p>
+            </div>
+            <div class="icecream">
+                <img src="ice-cream.png" alt="icecream">
+                <p>Ice Cream</p>
+            </div>
+            <div class="pies">
+                <img src="pie.png" alt="pies">
+                <p>Pie</p>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Main Content -->
+    <div class="maincontent">
+
+<!-- Column 1 -->
+
+        <div class="col-1">
+            <div class="recipeoftheday">
+                <h1>Recipe of the Day</h1>
+            </div>
+            <div class="orangetartpic">
+                <img src="orange-tart.jpg" alt="orange-tart">
+            </div>
+            <div class="caption">
+                <div class="description">
+                    <h4>Orange Tea Jelly Tart</h4>
+                    <h4>By: <a href="#">yuripiano</a></h4>
+                </div>
+                <div class="heartbutton">
+                    <button onclick="addheartorangetart()">❤️</button>
+                    <h4 id="totallikesorangetart">69</h4>
+                </div>
+            </div>
+            <div class="seefullrecipe">
+                <a href="#">See Full Recipe</a>
+            </div>
+        </div>
+
+<!-- Column 2 -->
+        <div class="col-2">
+            <div class="recommended">
+                <h4>Recommended for you:</h4>
+            </div>
+
+<!-- Macarons -->
+
+            <div class="macarons">
+                <div class="macaronspicture">
+                    <img src="macarons.jpg" alt="macarons">
+                </div>
+                <div class="macaronscaption">
+                    <div class="macaronsdescription">
+                        <h4>Macarons</h4>
+                        <h4>by:<a href="#">EmilieW</a></h4>
+                    </div>
+                    <div class="macaronsheartbutton">
+                        <button onclick="addheartmacarons()">❤️</button>
+                        <h4 id="totallikesmacarons">212</h4>
+                    </div>
+                </div>
+            </div>
+
+<!-- CremeBrulee -->
+
+            <div class="cremebrulee">
+                <div class="cremebruleepicture">
+                    <img src="creme-brulee.jpg" alt="cremebrulee">
+                </div>
+                <div class="cremebruleecaption">
+                    <div class="cremebruleedescription">
+                        <h4>Crème Brûlée</h4>
+                        <h4>by:<a href="#">MarisaG</a></h4>
+                    </div>
+                    <div class="cremebruleeheartbutton">
+                        <button onclick="addheartcremebrulee()">❤️</button>
+                        <h4 id="totallikescremebrulee">33</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Script -->
+
+    <script src="script.js"></script>
+</body>
+</html>
